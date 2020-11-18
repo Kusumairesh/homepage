@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Home Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {
+	display:none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: ;
+  position: absolute;
+}
+
+.topnav #myLinks {
+  display:none ;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: ;
+}
+
+.topnav a.icon {
+  float: left;
+ 
+ 
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  width: 300px;
+  color: white;
+}
+.mydivs{
+	display: none;
+	
+}
+.content{
+	position: absolute;
+	color:white;
+	margin-left: 50px;
+	margin-top: 100px;
+}
+input[type="button"]{
+	width: 200px;
+	height: 50px;
+	border-radius: 5px;
+	background-color: #20B2AA;
+}
+</style>
+</head>
+
+<body>
+<div class="topnav">
+  <h1><a href="#" class="active">Exponent</a></h1>
+  <div id="myLinks">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+   	<a href="#">Blog</a>
+    <a href="#">Servies</a>
+    <input type="button" name="" value="SIGN UP NOW">
+    <br><br>
+
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    <i class="fa fa-bars"></i>
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<div class="w3-content w3-section" style="max-width:1400px">
+<div class="mydivs">
+	<div class="content">
+	<h3 class="">Before financial future for non-gen future</h3>
+	<p>Exponent is a pixel perfect theme, that is tailor made for startups and business.Build your website swiftly and easily</p>
+	<br>
+	<input type="button" name="LEARN MORE" value="LEARN MORE">
+	</div>
+	
+  <img class="mySlides" src="https://images.unsplash.com/photo-1604961422667-b4c9ff762e34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" style="width:100%">
+  </div>
+  <div class="mydivs">
+  	<div class="content">
+  		<h3>Our motto is to balance risk with growth.</h3>
+  		<p>perfect blend of specious layouts, precise typography and trend design elements</p>
+  		<br>
+  		<input type="button" name="" value="Contact Us">
+  	</div>
+  	<img class="mySlides" src="https://images.unsplash.com/photo-1605246811037-7a815fa646e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" style="width:100%">
+  
+</div>
+  <div class="mydivs">
+  	<div class="content">
+  		<h3>Its time to make your money work for you</h3>
+  		<p>Exponent is a pixel perfect theme, that is trailor made for startups and busisness.Build your website swiftly and easily.</p>
+  		<br>
+  		<input type="button" name="" value="About Us">
+  	</div>
+  	<img class="mySlides" src="https://images.unsplash.com/photo-1539419161974-ca10454f4dcf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="width:100%">
+
+</div>
+  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var y = document.getElementsByClassName("mydivs");
+  for (i = 0; i < x.length; i++)
+   {
+    x[i].style.display = "none"; 
+    y[i].style.display ="none"; 
+   }
+  myIndex++;
+  if (myIndex > x.length) {
+  	myIndex = 1
+  }    
+  x[myIndex-1].style.display = "block"; 
+  y[myIndex-1].style.display ="block"; 
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  }
+   else
+    {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
+
